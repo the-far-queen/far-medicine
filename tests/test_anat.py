@@ -24,11 +24,11 @@ from anat import (  # noqa: E402
 DISK = list(BLOCKS)
 
 GRAY = Source(
-    title="Anatomy of the Human Body (20th US ed.)",
-    author="Henry Gray; ed. Warren H. Lewis",
+    title="Anatomy of the Human Body (20th US ed., 1247 engravings)",
+    author="Henry Gray; thoroughly revised and re-edited by Warren H. Lewis, M.D.",
     edition="20th US edition",
     year=1918,
-    source_url="https://www.gutenberg.org/ebooks/37417",
+    source_url="https://archive.org/download/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt",
     license="public-domain",
     locator="digestive system",
 )
@@ -136,6 +136,22 @@ def t_M10_taxonomy_complete():
     print(f"M10: ok ({len(BLOCKS)} blocks declared and scaffolded)")
 
 
+def t_M11_source_url_is_well_formed():
+    """a source URL must look like a URL.
+
+    Written after a real failure: a Gutenberg ebook ID written from
+    memory turned out to belong to an unrelated French magazine. The
+    gate cannot fetch the network, so it refuses malformed URLs and the
+    SOURCES.md manifest records which IDs were actually verified by
+    fetching them.
+    """
+    for s in (GRAY,):
+        assert s.source_url.startswith("https://"), f"not https: {s.source_url}"
+        assert " " not in s.source_url, f"space in url: {s.source_url}"
+        assert s.source_url.rstrip("/").count("/") >= 3, f"too shallow: {s.source_url}"
+    print("M11: ok (source urls well-formed)")
+
+
 def main():
     t_M1_repro_id()
     t_M2_definition_required()
@@ -147,7 +163,8 @@ def main():
     t_M8_license_never_upgraded()
     t_M9_bad_year_refused()
     t_M10_taxonomy_complete()
-    print("\nALL FAR-MEDICINE GATE TESTS PASS (M1..M10)")
+    t_M11_source_url_is_well_formed()
+    print("\nALL FAR-MEDICINE GATE TESTS PASS (M1..M11)")
 
 
 if __name__ == "__main__":
