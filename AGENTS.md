@@ -10,14 +10,32 @@ downstream of this file.
 
 ## What this repo is
 
-A free, open-source substrate for a medical education pipeline: terms
+A free, open-source **medical school** for humans and for AI: terms
 anchored to named anatomical structures, organized by the standard US
 medical school curriculum, sourced from public-domain and
 openly-licensed textbooks.
 
+**Purpose: to awaken humans, and to carry medical and aging
+breakthroughs.** The school is real — it teaches, it gates, it refuses
+a term that cannot name the structure it describes. It is not a
+university in the accreditation sense: no credits, no tuition, no
+enrollment office. The curriculum structure is borrowed because it is
+the clearest map of the human body that exists.
+
+**This is the cutting edge, not the syllabus.** The standard curriculum
+is the floor — everyone gets the anatomy. Above that floor sits the
+frequency and interference work, the latent and unactivated systems,
+DNA expression, and the aging biology this project is aimed at. Those do
+not belong to any existing department, which is the point.
+
+The output is a substrate that AI agents and the humans working with
+them can use directly.
+
 ## What this repo is NOT
 
-- **Not clinical advice.** This is a substrate and tooling. Use a
+- **Not a university.** No credits, no tuition, no accreditation. A
+  school without a price.
+- **Not clinical advice.** This is a school and tooling. Use a
   clinician.
 - **Not a diagnosis tool.** Nothing here takes a patient.
 - **Not a vocabulary list.** A term that cannot name the structure it
