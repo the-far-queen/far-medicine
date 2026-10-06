@@ -46,21 +46,30 @@ currently permitted — as a standing constraint, not a permanent right.
 
 Books verified present (catalog harvested 2026-10-06):
 
-| Book | URL | Far-medicine block |
-|---|---|---|
-| Anatomy and Physiology 2e | `https://openstax.org/details/books/anatomy-and-physiology-2e` | anatomy, physiology |
-| Microbiology | `https://openstax.org/details/books/microbiology` | microbiology |
-| Biology 2e | `https://openstax.org/details/books/biology-2e` | biology foundations |
-| Concepts of Biology | `https://openstax.org/details/books/concepts-biology` | intro |
-| Biology for AP Courses | `https://openstax.org/details/books/biology-ap-courses` | intro |
-| Introduction to Behavioral Neuroscience | `https://openstax.org/details/books/introduction-behavioral-neuroscience` | neuroscience, psychiatry |
-| Chemistry 2e | `https://openstax.org/details/books/chemistry-2e` | biochemistry |
-| Organic Chemistry | `https://openstax.org/details/books/organic-chemistry` | biochemistry |
-| Human Biology (Wakim & Grewal) | `https://openstax.org/details/books/human-biology` | intro clinical |
+| Book | URL | Far-medicine block | Status |
+|---|---|---|---|
+| Anatomy and Physiology 2e | `https://openstax.org/details/books/anatomy-and-physiology-2e` | anatomy, physiology | verified |
+| Microbiology | `https://openstax.org/details/books/microbiology` | microbiology | verified in catalog |
+| **Medical Surgical Nursing** | `https://openstax.org/details/books/medical-surgical-nursing` | clinical, nursing | **verified** — authors Christy Bowen (Chamberlain U), Bridget Carey (Holy Family U), Jessica Palozie (U Connecticut), Maren Reinholdt (U Rochester School of Nursing). Title page reads "Medical Surgical Nursing". |
+| Biology 2e | `https://openstax.org/details/books/biology-2e` | biology foundations | verified in catalog |
+| Concepts of Biology | `https://openstax.org/details/books/concepts-biology` | intro | verified in catalog |
+| Biology for AP Courses | `https://openstax.org/details/books/biology-ap-courses` | intro | verified in catalog |
+| Introduction to Behavioral Neuroscience | `https://openstax.org/details/books/introduction-behavioral-neuroscience` | neuroscience, psychiatry | verified in catalog |
+| Chemistry 2e | `https://openstax.org/details/books/chemistry-2e` | biochemistry | verified in catalog |
+| Organic Chemistry | `https://openstax.org/details/books/organic-chemistry` | biochemistry | verified in catalog |
+| Human Biology | `https://openstax.org/details/books/human-biology` | — | **DOES NOT EXIST.** Fetched 2026-10-06: OpenStax returns "Uh-oh, no page here". Removed from this list — it was written here from memory and is wrong. |
 
 Anatomy and Physiology 2e senior authors include J. Gordon Betts, Kelly A.
 Young, James A. Wise, Eddie Johnson, Brandon Poe, Dean H. Kruse, Oksana
 Korol, Jody E. Johnson, Mark Womble, Peter DeSaix. Attribution required.
+
+### A note on trusting URLs from memory
+
+Two of the three source records written from memory in this session were
+wrong: a Gutenberg ebook ID that belonged to a French magazine, and an
+OpenStax book slug that does not exist. Both looked entirely plausible.
+The only reliable procedure is to fetch and read the page before
+recording it.
 
 ### LibreTexts
 License: typically **CC BY-NC-SA** (varies per page). The NC clause
